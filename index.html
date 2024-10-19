@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./node_modules/axios/dist/axios.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>مواقيت الصلاه</title>
+</head>
+<body>
+    <div class="parent">
+        <h1 id="time">Prayer Times for Egypt's Governorates<br></h1>
+        <div class="select-container">
+            <label for="city-select">Select a city:</label>
+            <select id="city-select" class="city-select">
+                <option value="Cairo">Cairo</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Gizeh">Gizeh</option>
+                <option value="Port Said">Port Said</option>
+                <option value="Suez">Suez</option>
+                <option value="Luxor">Luxor</option>
+                <option value="Tanta">Tanta</option>
+                <option value="Shubra El-Kheima">Shubra El-Kheima</option>
+                <option value="al-Mansura">al-Mansura</option>
+                <option value="El-Mahalla El-Kubra">El-Mahalla El-Kubra</option>
+                <option value="Asyut">Asyut</option>
+                <option value="Ismailia">Ismailia</option>
+                <option value="Fayyum">Fayyum</option>
+                <option value="Zagazig">Zagazig</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Damietta">Damietta</option>
+                <option value="Damanhur">Damanhur</option>
+                <option value="al-Minya">al-Minya</option>
+                <option value="Beni Suef">Beni Suef</option>
+                <option value="Qena">Qena</option>
+                <option value="Sohag">Sohag</option>
+                <option value="Hurghada">Hurghada</option>
+                <option value="Banha">Banha</option>
+                <option value="Kafr el-Sheikh">Kafr el-Sheikh</option>
+                <option value="Arish">Arish</option>
+                <option value="Marsa Matruh">Marsa Matruh</option>
+                <option value="Qalyub">Qalyub</option>
+            </select>
+        </div>
+        <button id="fetch-times" class="fetch-button">Get Prayer Times</button>
+        <div class="bottom" id="bottom"></div>
+    </div>
+</body>
+<script src="js/api.js"></script>
+</html>
